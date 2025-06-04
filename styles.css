@@ -1,0 +1,309 @@
+/* Estilos generales - Versión Mar Celeste Tropical */
+body {
+    font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #154360; /* Azul oscuro tropical */
+    margin: 0;
+    padding: 0;
+    background-color: #e8f8f5; /* Celeste agua clara */
+}
+
+/* Header - Combinación celeste/aguamarina */
+header {
+    background: linear-gradient(135deg, #5dade2 0%, #48c9b0 100%); /* Degradado celeste-aguamarina */
+    color: white;
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(86, 204, 242, 0.1);
+    border-bottom: 4px solid #48c9b0; /* Aguamarina */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+    margin-top: 1.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #aed6f1;
+}
+
+nav a:hover {
+    background-color: #2980b9; /* Celeste oscuro */
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Sección Intro */
+#intro {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    margin: 3rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(168, 216, 242, 0.1);
+    border: 1px solid #d1e7f5; /* Celeste muy claro */
+}
+
+#intro h2 {
+    color: #48c9b0; /* Aguamarina */
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#intro p {
+    font-size: 1.1rem;
+    color: #5dade2; /* Celeste medio */
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+/* Botón principal */
+.btn-principal {
+    background: linear-gradient(to right, #5dade2, #48c9b0); /* Degradado celeste-aguamarina */
+    color: white;
+    border: none;
+    padding: 0.9rem 2.2rem;
+    font-size: 1.05rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(72, 201, 176, 0.2);
+    font-weight: 500;
+}
+
+.btn-principal:hover {
+    background: linear-gradient(to right, #48c9b0, #5dade2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(72, 201, 176, 0.3);
+}
+
+/* Galería */
+#Galeria {
+    padding: 4rem 2rem;
+    background-color: #d1e7f5; /* Celeste agua muy claro */
+    text-align: center;
+}
+
+#Galeria h2 {
+    color: #48c9b0; /* Aguamarina */
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+#Galeria h2::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #5dade2, #48c9b0);
+    border-radius: 2px;
+}
+
+.Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(86, 204, 242, 0.08);
+    transition: all 0.3s ease;
+    width: 300px;
+    border: 1px solid #d1e7f5;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(86, 204, 242, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+.card p {
+    padding: 1.2rem;
+    font-weight: 600;
+    color: #154360; /* Azul oscuro */
+    margin: 0;
+    background-color: #f0f9ff;
+    border-top: 1px solid #d1e7f5;
+}
+
+/* Formulario de Contacto */
+#Contacto {
+    padding: 4rem 3rem;
+    max-width: 600px;
+    margin: 3rem auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(168, 216, 242, 0.1);
+    border: 1px solid #d1e7f5;
+}
+
+#Contacto h2 {
+    color: #48c9b0; /* Aguamarina */
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    color: #5dade2; /* Celeste medio */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #aed6f1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background-color: #f0f9ff;
+    color: #154360;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #48c9b0;
+    box-shadow: 0 0 0 3px rgba(72, 201, 176, 0.2);
+}
+
+form button[type="submit"] {
+    align-self: center;
+    margin-top: 1rem;
+    padding: 0.9rem 2.5rem;
+    background: linear-gradient(to right, #5dade2, #48c9b0);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+form button[type="submit"]:hover {
+    background: linear-gradient(to right, #48c9b0, #5dade2);
+    transform: translateY(-2px);
+}
+
+footer {
+    background: linear-gradient(135deg, #5dade2 0%, #48c9b0 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 4rem;
+    border-top: 4px solid #aed6f1;
+}
+
+footer p:first-child {
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.redes a {
+    color: white;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.redes a:hover {
+    color: #154360;
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+footer p:last-child {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #d1e7f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 0.5rem 1.2rem;
+    }
+    
+    .Galeria {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    #intro, #Contacto {
+        padding: 3rem 1.5rem;
+        margin: 2rem 1rem;
+        width: auto;
+    }
+}
